@@ -4,12 +4,19 @@ const {validAnagram} = require('./anagramFreqCounter');
 const { sumZero } = require('./multiplePointers');
 const {countUnique  } = require("./countUniqueValuesMP");
 const {maxSubarraySum} = require('./slidingWindows.js');
-
 const {search} = require('./divideConquer.js');
 const {factorial} = require('./factorialRecursive.js');
+const {fib} = require("./recursiveFib.js");
 
 
-factorial(6);
+ //fib(4) // 3
+//fib(10) // 55
+ fib(28) // 317811
+// fib(35) // 9227465
+
+
+
+//factorial(6);
 //search([1,2,3,4,5,6,7], 4) //3
 //earch([1, 2, 3], 3) //2
 //search([2,3,4,5], 11) // -1
