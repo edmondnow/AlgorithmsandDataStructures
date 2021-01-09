@@ -6,9 +6,12 @@ const {countUnique  } = require("./countUniqueValuesMP");
 const {maxSubarraySum} = require('./slidingWindows.js');
 
 const {search} = require('./divideConquer.js');
+const {factorial} = require('./factorialRecursive.js');
 
+
+factorial(6);
 //search([1,2,3,4,5,6,7], 4) //3
-search([1, 2, 3], 3) //2
+//earch([1, 2, 3], 3) //2
 //search([2,3,4,5], 11) // -1
 
 //maxSubarraySum([1, 2, 5, 2, 8, 1, 5], 2) //10
