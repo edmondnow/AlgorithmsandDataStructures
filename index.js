@@ -7,14 +7,13 @@ const {maxSubarraySum} = require('./slidingWindows.js');
 const {search} = require('./divideConquer.js');
 const {factorial} = require('./factorialRecursive.js');
 const {fib} = require("./recursiveFib.js");
-
+const {bubbleSort} = require("./bubbleSort.js");
 
  //fib(4) // 3
 //fib(10) // 55
- fib(28) // 317811
+ //fib(28) // 317811
 // fib(35) // 9227465
-
-
+bubbleSort([2, 1, 3, 2, 14, 12, 10, 15, 5, 8, 6])
 
 //factorial(6);
 //search([1,2,3,4,5,6,7], 4) //3
