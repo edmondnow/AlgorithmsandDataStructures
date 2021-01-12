@@ -11,9 +11,14 @@ const {bubbleSort} = require("./bubbleSort.js");
 const {selectionSort} = require("./selectionSort.js");
 const { insertionSort } = require("./insertionSort.js");
 const { mergeSort } = require('./mergeSort.js');
+const { quickSort } = require('./quickSort.js');
+
+quickSort([3,1,2]);
 
 
-mergeSort([3,4,5, 0,1,2, 12, 9, 22, 11, 10, 13, 15])
+
+
+//mergeSort([3,4,5, 0,1,2, 12, 9, 22, 11, 10, 13, 15])
 
  //fib(4) // 3
 //fib(10) // 55
