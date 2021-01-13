@@ -13,7 +13,7 @@ const { insertionSort } = require("./insertionSort.js");
 const { mergeSort } = require('./mergeSort.js');
 const { quickSort } = require('./quickSort.js');
 
-quickSort([3,1,2]);
+quickSort([3,1,2, 9, 8, 7, 6, 10, 0, 4]);
 
 
 
