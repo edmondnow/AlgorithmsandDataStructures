@@ -12,11 +12,18 @@ const {selectionSort} = require("./selectionSort.js");
 const { insertionSort } = require("./insertionSort.js");
 const { mergeSort } = require('./mergeSort.js');
 const { quickSort } = require('./quickSort.js');
+const { diagonal } = require('./diagonal.js')
+const { radixSort } = require("./radixSort.js");
 
-quickSort([3,1,2, 9, 8, 7, 6, 10, 0, 4]);
+
+
+//quickSort([3,1,2, 9, 8, 7, 6, 10, 0, 4]);
+
+//diagonal(5)
 
 
 
+radixSort([15, 45, 2, 0, 93, 12, 46, 99, 1010])
 
 //mergeSort([3,4,5, 0,1,2, 12, 9, 22, 11, 10, 13, 15])
 
