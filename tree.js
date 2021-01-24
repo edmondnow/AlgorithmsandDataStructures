@@ -67,23 +67,120 @@ class BinarySearchTree {
     }
 
 
-  traversal() {
+  breathFirstTraversal() {
 	let queue = [];
-	let store []; 
+	let store = []; 
 
 	queue.push(this.root);
 	
 	while(queue.length > 0) {
-		const node = queque.pop()
-		store.push(node.val);
+		const node = queue.pop()
+		store.push(node.value);
 		if(node.left) {
-				queue.push(node.left);
+				queue.unshift(node.left);
 		}
 
 		if(node.right) {
-			queue.push(node.right);
+			queue.unshift(node.right);
 		}
 	}
+	
+	return store;
+}
+
+dfsPreOrder() {
+	let current = this.root;
+	let store = []; 
+	
+	
+	function helper(node) {
+		
+	
+    	store.push(node.value);
+      
+		if (node.left) {
+				helper(node.left)
+		}
+	
+		if (node.right) {
+				helper(node.right)
+		}
+
+	
+  
+  
+	
+	}
+
+
+	
+	helper(current);
+	
+	return store;
+}
+
+
+
+dfsPostOrder() {
+	let current = this.root;
+	let store = []; 
+	
+	
+	function helper(node) {
+		
+	
+
+		if (node.left) {
+				helper(node.left)
+		}
+	
+		if (node.right) {
+				helper(node.right)
+		}
+
+		store.push(node.value);
+  
+  
+	
+	}
+
+
+	
+	helper(current);
+	
+	return store;
+}
+
+
+
+dfsInOrder() {
+	let current = this.root;
+	let store = []; 
+	
+	
+	function helper(node) {
+		
+	
+
+		if (node.left) {
+				helper(node.left)
+		}
+
+    
+		store.push(node.value);
+	
+		if (node.right) {
+				helper(node.right)
+		}
+
+  
+  
+	
+	}
+
+
+	
+	helper(current);
 	
 	return store;
 }
@@ -93,7 +190,13 @@ class BinarySearchTree {
 //      10
 //   5     13
 // 2  7  11  16
-
 var tree = new BinarySearchTree();
+tree.insert(10);
+tree.insert(6);
+tree.insert(15);
+tree.insert(3);
+tree.insert(8);
+tree.insert(20);
+//tree.traversal();
 
-module.export = {tree: tree};
+module.exports = {BinarySearchTree};

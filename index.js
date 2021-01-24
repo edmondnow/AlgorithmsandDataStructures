@@ -14,15 +14,16 @@ const { mergeSort } = require('./mergeSort.js');
 const { quickSort } = require('./quickSort.js');
 const { diagonal } = require('./diagonal.js')
 const { radixSort } = require("./radixSort.js");
-const { tree } = require("./tree.js");
+const { BinarySearchTree } = require("./tree.js");
 
-tree.insert(10)
-tree.insert(5)
-tree.insert(13)
-tree.insert(11)
-tree.insert(2)
-tree.insert(16)
-tree.insert(7)
+let tree = new BinarySearchTree();
+tree.insert(10);
+tree.insert(6);
+tree.insert(15);
+tree.insert(3);
+tree.insert(8);
+tree.insert(20);
+tree.breathFirstTraversal();
 
 //quickSort([3,1,2, 9, 8, 7, 6, 10, 0, 4]);
 
