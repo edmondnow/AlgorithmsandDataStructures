@@ -14,8 +14,15 @@ const { mergeSort } = require('./mergeSort.js');
 const { quickSort } = require('./quickSort.js');
 const { diagonal } = require('./diagonal.js')
 const { radixSort } = require("./radixSort.js");
+const { tree } = require("./tree.js");
 
-
+tree.insert(10)
+tree.insert(5)
+tree.insert(13)
+tree.insert(11)
+tree.insert(2)
+tree.insert(16)
+tree.insert(7)
 
 //quickSort([3,1,2, 9, 8, 7, 6, 10, 0, 4]);
 
@@ -23,7 +30,7 @@ const { radixSort } = require("./radixSort.js");
 
 
 
-radixSort([15, 45, 2, 0, 93, 12, 46, 99, 1010])
+//radixSort([15, 45, 2, 0, 93, 12, 46, 99, 1010])
 
 //mergeSort([3,4,5, 0,1,2, 12, 9, 22, 11, 10, 13, 15])
 
