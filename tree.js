@@ -65,6 +65,28 @@ class BinarySearchTree {
         }
         return false;
     }
+
+
+   traversal(tree) {
+	let queue = [];
+	let store []; 
+
+	queue.push(tree.root);
+	
+	while(queue.length > 0) {
+		const node = queque.pop()
+		store.push(node.val);'
+		if(node.left) {
+				queue.push(node.left);
+		}
+
+		if(node.right) {
+			queue.push(node.right);
+		}
+	}
+	
+	return store;
+}
 }
 
 
