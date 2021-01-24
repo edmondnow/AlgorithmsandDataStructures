@@ -67,15 +67,15 @@ class BinarySearchTree {
     }
 
 
-   traversal(tree) {
+  traversal() {
 	let queue = [];
 	let store []; 
 
-	queue.push(tree.root);
+	queue.push(this.root);
 	
 	while(queue.length > 0) {
 		const node = queque.pop()
-		store.push(node.val);'
+		store.push(node.val);
 		if(node.left) {
 				queue.push(node.left);
 		}
