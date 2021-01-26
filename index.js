@@ -15,15 +15,13 @@ const { quickSort } = require('./quickSort.js');
 const { diagonal } = require('./diagonal.js')
 const { radixSort } = require("./radixSort.js");
 const { BinarySearchTree } = require("./tree.js");
+const { MaxBinaryHeap }  = require("./binaryHeap.js")
 
-let tree = new BinarySearchTree();
-tree.insert(10);
-tree.insert(6);
-tree.insert(15);
-tree.insert(3);
-tree.insert(8);
-tree.insert(20);
-tree.breathFirstTraversal();
+let maxBinaryHeap = new MaxBinaryHeap();
+
+maxBinaryHeap.push(55);
+maxBinaryHeap.bubbleUp();
+
 
 //quickSort([3,1,2, 9, 8, 7, 6, 10, 0, 4]);
 
