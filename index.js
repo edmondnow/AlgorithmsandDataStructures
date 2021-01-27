@@ -21,6 +21,7 @@ let maxBinaryHeap = new MaxBinaryHeap();
 
 maxBinaryHeap.push(55);
 maxBinaryHeap.bubbleUp();
+maxBinaryHeap.extractMax();
 
 
 //quickSort([3,1,2, 9, 8, 7, 6, 10, 0, 4]);
