@@ -15,14 +15,53 @@ const { quickSort } = require('./quickSort.js');
 const { diagonal } = require('./diagonal.js')
 const { radixSort } = require("./radixSort.js");
 const { BinarySearchTree } = require("./tree.js");
-const { MaxBinaryHeap }  = require("./binaryHeap.js")
+const { MaxBinaryHeap, PriorityQueue }  = require("./binaryHeap.js")
+const { HashTable } = require("./hashTable.js");
+const { Graph } = require("./graph.js")
 
-let maxBinaryHeap = new MaxBinaryHeap();
 
-maxBinaryHeap.push(55);
-maxBinaryHeap.bubbleUp();
-maxBinaryHeap.extractMax();
+let g = new Graph();
 
+g.addVertex("A")
+g.addVertex("B")
+g.addVertex("C")
+g.addVertex("D")
+g.addVertex("E")
+g.addVertex("F")
+
+
+g.addEdge("A", "B")
+g.addEdge("A", "C")
+g.addEdge("B","D")
+g.addEdge("C","E")
+g.addEdge("D","E")
+g.addEdge("D","F")
+g.addEdge("E","F")
+g.BFS("A")
+
+
+//let ht = new HashTable(17);
+//ht.set("maroon","#800000")
+//ht.set("yellow","#FFFF00")
+//ht.set("olive","#808000")
+//ht.set("salmon","#FA8072")
+//ht.set("lightcoral","#F08080")
+//ht.set("mediumvioletred","#C71585")
+//ht.set("plum","#DDA0DD")
+//ht.keys();
+
+
+
+//let maxBinaryHeap = new MaxBinaryHeap();
+//maxBinaryHeap.push(55);
+//maxBinaryHeap.bubbleUp();
+//maxBinaryHeap.extractMax();
+
+//let prioQue = new PriorityQueue();
+//prioQue.enqueue("lol2", 2)
+//prioQue.enqueue("lol3", 5)
+//prioQue.dequeue();
+//prioQue.values;
 
 //quickSort([3,1,2, 9, 8, 7, 6, 10, 0, 4]);
 
