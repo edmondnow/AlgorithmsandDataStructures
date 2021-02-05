@@ -165,7 +165,6 @@ swap = (idx1, idx2, arr) => {
     
     }
 
-  console.log(">>")
     return root; 
 }
 

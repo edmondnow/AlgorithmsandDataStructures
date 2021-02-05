@@ -18,26 +18,46 @@ const { BinarySearchTree } = require("./tree.js");
 const { MaxBinaryHeap, PriorityQueue }  = require("./binaryHeap.js")
 const { HashTable } = require("./hashTable.js");
 const { Graph } = require("./graph.js")
+const { WeightedGraph } = require('./dijkstra.js')
+
+var graph = new WeightedGraph()
+graph.addVertex("A");
+graph.addVertex("B");
+graph.addVertex("C");
+graph.addVertex("D");
+graph.addVertex("E");
+graph.addVertex("F");
+
+graph.addEdge("A","B", 4);
+graph.addEdge("A","C", 2);
+graph.addEdge("B","E", 3);
+graph.addEdge("C","D", 2);
+graph.addEdge("C","F", 4);
+graph.addEdge("D","E", 3);
+graph.addEdge("D","F", 1);
+graph.addEdge("E","F", 1);
 
 
-let g = new Graph();
+graph.Dijkstra("A", "E");
 
-g.addVertex("A")
-g.addVertex("B")
-g.addVertex("C")
-g.addVertex("D")
-g.addVertex("E")
-g.addVertex("F")
+// ["A", "C", "D", "F", "E"]
 
+//let g = new Graph();
 
-g.addEdge("A", "B")
-g.addEdge("A", "C")
-g.addEdge("B","D")
-g.addEdge("C","E")
-g.addEdge("D","E")
-g.addEdge("D","F")
-g.addEdge("E","F")
-g.BFS("A")
+//g.addVertex("A")
+//g.addVertex("B")
+//g.addVertex("C")
+//g.addVertex("D")
+//g.addVertex("E")
+//g.addVertex("F")
+//g.addEdge("A", "B")
+//g.addEdge("A", "C")
+//g.addEdge("B","D")
+//g.addEdge("C","E")
+//g.addEdge("D","E")
+//g.addEdge("D","F")
+//g.addEdge("E","F")
+//g.BFS("A")
 
 
 //let ht = new HashTable(17);
